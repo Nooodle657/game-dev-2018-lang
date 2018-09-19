@@ -1,0 +1,23 @@
+<h1 align=center>If Statements by Fred (actually by Nathan)</h1>
+
+<input id="myIn" type=text value=2>
+
+<input type=button value="decision if statement" onclick="{
+
+document.getElementById('myOut').innerHTML = ''
+
+x = document.getElementById('myIn').value
+
+if ( x <= 8){
+	document.getElementById('myOut').innerHTML +=
+		'wow the number is less than 8<br>'
+}
+
+if ( x > 200){
+	document.getElementById('myOut').innerHTML +=
+		'oof why is the number so <font color=red> high </font> <br>'
+}
+
+}">
+
+<div id="myOut">...</div>
