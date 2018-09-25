@@ -1,0 +1,40 @@
+<input type=text id="myText01" value=30>
+<input type=button value="run for loop" onclick="{
+
+	document.getElementById('myDiv01').innerHTML = ''
+
+for (let x=0; x < document.getElementById('myText01').value; x++){
+if ( x > 27){
+	document.getElementById('myDiv01').innerHTML +=
+		'<font color=red>3rr0R d035 N0T C0^$MpUtE</font><br>'
+}
+if ( x == 8){
+	document.getElementById('myDiv01').innerHTML +=
+		'wow the number is equal to 8<br>'
+}
+if ( x == 1){
+	document.getElementById('myDiv01').innerHTML +=
+		'wow the number is so small<br>'
+}
+if ( x % 2 == 0){
+	document.getElementById('myDiv01').innerHTML +=
+		'wow the number is even. this is so <font color=blue> sad </font><font color=green> alexa play </font><font color=red> DeSpAcItO <br>'
+}
+if ( x == 3){
+	document.getElementById('myDiv01').innerHTML +=
+		'wow the number is so <font color=red> loading... </font><br>'
+}
+if ( x == 4){
+	document.getElementById('myDiv01').innerHTML +=
+		'<font color=#6b5b95> this </font><font color=#ff7b25> number </font><font color=#d64161> is </font><font color=#feb236> colourful </font><br>'
+}
+
+	document.getElementById('myDiv01').innerHTML += `x is ` + x + `<br>`
+
+}
+
+}">
+
+
+
+<div id="myDiv01">...</div>
