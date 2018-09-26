@@ -1,7 +1,18 @@
-<h2> Functions </h2>
+<h2 align=center> Functions </h2>
 
-make an input text called id="myText01"
+<input type=text value=3 id="myText01" >
 
-make a button value "Run function myFun"
+<input type=button value="run function myFun" onclick="{
+function myFun(){
 
-make a output div id="myDiv01"
+		document.getElementById('myDiv01').innerHTML = `3 x 3 = `+
+
+			document.getElementById('myText01').value *
+
+				document.getElementById('myText01').value
+}
+
+myFun()
+
+}">
+<div id="myDiv01">...</div>
