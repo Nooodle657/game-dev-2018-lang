@@ -7,15 +7,40 @@
 document.getElementById('myOut').innerHTML = ''
 
 x = document.getElementById('myIn').value
-
-if ( x <= 8){
-	document.getElementById('myOut').innerHTML +=
-		'wow the number is less than 8<br>'
+if ( x == 8){
+	document.getElementById('myDiv01').innerHTML +=
+		'wow the number is equal to 8<br>'
 }
-
-if ( x > 200){
-	document.getElementById('myOut').innerHTML +=
-		'oof why is the number so <font color=red> high </font> <br>'
+if ( x == 1){
+	document.getElementById('myDiv01').innerHTML +=
+		'wow the number is so small<br>'
+}
+if ( x % 2 == 0){
+	document.getElementById('myDiv01').innerHTML +=
+		'wow the number is even. this is so <font color=blue> sad </font><font color=green> alexa play </font><font color=red> DeSpAcItO <br>'
+}
+if ( x == 3){
+	document.getElementById('myDiv01').innerHTML +=
+		'wow the number is so <font color=red> loading... </font><br>'
+}
+if ( x == 4){
+	document.getElementById('myDiv01').innerHTML +=
+		'<font color=#6b5b95> this </font><font color=#ff7b25> number </font><font color=#d64161> is </font><font color=#feb236> colourful </font><br>'
+}
+if ((x == 3) || (x == 7)){
+	document.getElementById('myDiv01').innerHTML += 'Which other is my equal? I don\'t know!<br>'
+}
+if ((x == 9) || (x == 11)){
+	document.getElementById('myDiv01').innerHTML += '<font color=white>I WAS AN INSIDE JOB</font><br>'
+}
+if ((x == 10) || (x == 12)){
+	document.getElementById('myDiv01').innerHTML += '<font color=white>Thats what she said</font><br>'
+}
+if ( x == 69){
+	document.getElementById('myDiv01').innerHTML += 'HAHAHAHAHAHAHAHA immature<br>'
+}
+if ( x % 2 == 1){
+	document.getElementById('myDiv01').innerHTML += 'WOwOOOWOwowOw Hahaha<br>'
 }
 
 }">
