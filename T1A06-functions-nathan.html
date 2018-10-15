@@ -1,17 +1,40 @@
 <h2 align=center> Functions </h2>
-
+Change the text!<br>
 <input type=text value=3 id="myText01" >
 
-<input type=button value="run function myFun" onclick="{
+<input type=button value="Multiply by 2" onclick="{
 function myFun(){
 
-		document.getElementById('myDiv01').innerHTML = `3 x 3 = `+
+		document.getElementById('myDiv01').innerHTML = `The answer is `+
+
+			(parseFloat(document.getElementById('myText01').value) +
+
+			parseFloat(document.getElementById('myText01').value))
+
+}
+myFun()
+
+}">
+<input type=button value="Square me!" onclick="{
+function myFun(){
+		document.getElementById('myDiv01').innerHTML = `The Squared Version is... `+
 
 			document.getElementById('myText01').value *
 
 				document.getElementById('myText01').value
 }
+myFun()
 
+}">
+
+<input type=button value="Cut me in 2!" onclick="{
+function myFun(){
+		document.getElementById('myDiv01').innerHTML = `Half of the text is... `+
+
+			document.getElementById('myText01').value /
+
+				2
+}
 myFun()
 
 }">
