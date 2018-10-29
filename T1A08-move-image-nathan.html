@@ -1,4 +1,4 @@
-<h3 align=center > My Moving images by Nathan</h3>
+<h3 align=center > My Moving images by Nathan(not Fred)</h3>
 
 <script>
 
@@ -30,7 +30,9 @@ function checkKey(myEvent) {
    let myDuration = Math.round((myEnd-myStart)/1000)
    document.getElementById('myDiv01').innerHTML = 'seconds: ' + myDuration +
 ', keyCode: '+myEvent.keyCode
-
+   if (myDuration >= 30){
+	alert("Player Two Survived! Player One is a Libtard!")
+}
    if (myHitOther('myImage01','myImage02')){
        alert("Player One Wins! Player Two Sucks!");
 }
