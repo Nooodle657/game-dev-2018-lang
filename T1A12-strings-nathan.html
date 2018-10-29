@@ -1,12 +1,89 @@
 <h1 align=center>String Manipultion Functions by Nathan... I think?</h1>
-<input id="myIn" type=text value="word, cat">
+<input id="myIn01" type=text value="word, cat">
 
-<input type=button value=".toUpperCase()" onclick="{
+<input type=button value="YELLING" onclick="{
 
-	document.getElementById('myOut').innerHTML =
-		document.getElementById('myIn').value.toUpperCase()
+	document.getElementById('myOut01').innerHTML =
+		document.getElementById('myIn01').value.toUpperCase()
 
 }">
 
-<div id="myOut">...</div>
+<div id="myOut01">...</div><br>
 
+<input id="myIn02" type=text value="blub, nut">
+
+<input type=button value="Italics"onclick="{
+
+	document.getElementById('myOut02').innerHTML =
+		document.getElementById('myIn02').value.italics()
+
+}">
+
+<div id="myOut02">...</div><br>
+
+<input id="myIn03" type=text value="what">
+<input type=button value="Link"onclick="{
+
+	document.getElementById('myOut03').innerHTML =
+		document.getElementById('myIn03').value.link('https://www.w3schools.com/jsref/jsref_obj_string.asp')
+
+}">
+
+<div id="myOut03">...</div><br>
+
+<input id="myIn04" type=text value="hey im batman">
+<input type=button value="Big And Epic"onclick="{
+
+	document.getElementById('myOut04').innerHTML =
+		document.getElementById('myIn04').value.big().toUpperCase()
+
+}">
+
+<div id="myOut04">...</div><br>
+
+<input id="myIn05" type=text value="no way">
+<input type=button value="Sort"onclick="{
+
+	document.getElementById('myOut05').innerHTML =
+		document.getElementById('myIn05').value.match(/way/g)
+
+}">
+
+<div id="myOut05">...</div><br>
+
+<input id="myIn06" type=text value="yes it doesnt">
+<input type=button value="Does This Work"onclick="{
+
+	document.getElementById('myOut06').innerHTML =
+		document.getElementById('myIn06').value.strike()
+
+}">
+
+<div id="myOut06">...</div><br>
+
+<input id="myIn08" type=text value="Bobs My Uncle">
+<input type=button value="index"onclick="{
+
+	document.getElementById('myOut08').innerHTML =
+		document.getElementById('myIn08').value.indexOf('o')
+
+}">
+
+<div id="myOut08">...</div><br>
+
+<input id="myIn09" type=text value="Devon">
+<input id="myIn10" type=text value="Dylan">
+<input id="myIn11" type=text value="Greg">
+<input id="myIn12" type=text value="Zach">
+<input id="myIn13" type=text value="Hannah">
+<input type=button value="Slice"onclick="myFunction()">
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var fruits = [document.getElementById("myIn09").value, document.getElementById("myIn10").value, document.getElementById("myIn11").value, document.getElementById("myIn12").value, document.getElementById("myIn13").value];
+    var myBest = fruits.slice(1, 3);
+    document.getElementById("demo").innerHTML = myBest;
+}
+</script>
