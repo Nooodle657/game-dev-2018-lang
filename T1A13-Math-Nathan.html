@@ -1,0 +1,63 @@
+<h2 align=center>Math functions by Nathan</h2>
+
+<input id="myIn01" type=text value="25">
+<input type=button value="Square" onclick="{
+
+	document.getElementById('myOut01').innerHTML =
+		Math.sqrt(parseFloat(document.getElementById('myIn01').value))
+
+}">
+
+<div id="myOut01">...</div><br>
+
+<x ="document.getElementById('myIn02').value">
+<input id="myIn02" type=text value="-3">
+<input type=button value="Absolute" onclick="{
+
+	document.getElementById('myOut02').innerHTML =
+		Math.abs(parseFloat(document.getElementById('myIn02').value))
+
+}">
+
+<div id="myOut02">...</div><br>
+
+<input id="myIn03" type=text value="3.14">
+<input type=button value="Pi" onclick="{
+
+	document.getElementById('myOut03').innerHTML =
+		Math.PI;(parseFloat(document.getElementById('myIn03').value))
+
+}">
+
+<div id="myOut03">...</div><br>
+
+<x ="document.getElementById('myIn04').value">
+<input id="myIn04" type=text value="3.4">
+<input type=button value="Round Up" onclick="{
+
+	document.getElementById('myOut04').innerHTML =
+		Math.ceil(parseFloat(document.getElementById('myIn04').value))
+
+}">
+
+<div id="myOut04">...</div><br>
+
+<input id="myIn05" type=text value="4.7">
+<input type=button value="Round Down" onclick="{
+
+	document.getElementById('myOut05').innerHTML =
+		Math.floor(parseFloat(document.getElementById('myIn05').value))
+
+}">
+
+<div id="myOut05">...</div><br>
+
+<input id="myIn06" type=text value="666">
+<input type=button value="Cosine" onclick="{
+
+	document.getElementById('myOut06').innerHTML =
+		Math.cos(parseFloat(document.getElementById('myIn06').value * Math.PI /180))
+
+}">
+
+<div id="myOut06">...</div><br>
