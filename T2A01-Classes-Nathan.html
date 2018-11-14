@@ -1,0 +1,43 @@
+
+<h2 align=center>Javascript Classes Introduction by MEEEEE (nathan)</h2>
+<input type=text id="myNameInput" placeholder="Enter a name here" value="">
+<input type=text id="myNameInput2" placeholder="Enter an age here" value="">
+
+<input id="myButton130" type="button" value="Make and Show the Class" onclick="{      
+ class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){    
+       document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal
+   myDog = new myAnimal(document.getElementById('myNameInput').value, document.getElementById('myNameInput2').value)
+   myDog.myShow()                                                    
+}"><br><br>
+<div id='myDiv130'>...</div><br>
+
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+<input  type="button" value="Use ResponsiveCode" onclick="{      
+    responsiveVoice.speak('Yeet. Yot. Im a goat. Yeet Yot Im a goat.')
+}"><br><br>
+
+
+<input  type="button" value="initilize speak" onclick="{  
+    responsiveVoice.speak('wowza. you have ligma', 'US English Female', 
+{pitch: 1, rate: 1, volume : 1})                                              
+}"><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
