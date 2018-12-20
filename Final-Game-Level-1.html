@@ -6,7 +6,11 @@ Money: <input type=text id="myText06" value=2000><br>
 <input type=text id="myText04" value=""><br>
 <input type=text id="myText05" value=""><br>
 
+
+
 <input type=button align=center value="PLAY" onclick="{
+
+myShowClear()
 
 	document.getElementById('myText01').value = Math.floor((Math.random() * 10) + 1)
 	document.getElementById('myText02').value = Math.floor((Math.random() * 10) + 1)
@@ -60,8 +64,786 @@ if ((v == 7) && (w == 7) && (x == 7) && (y == 7)){
 }
   
     if(document.getElementById('myText06').value <= 0){
-window.location = 'Final-Gamel.html';
+window.location = 'Final-BankruptScene.html';
 }
+
+myShow()
 
 }">
 
+<input type=button align=center value="TEST" onclick="{
+
+myShowClear()
+v = document.getElementById('myText01').value
+w = document.getElementById('myText02').value
+x = document.getElementById('myText03').value
+y = document.getElementById('myText04').value
+z = document.getElementById('myText05').value
+
+if (v == w){
+	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(75)
+}
+
+if ((v == w) && (w == x)){
+	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(100)
+}
+
+if ((v == w) && (w == x) && (x == y)){
+	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(250)
+}
+
+
+
+if ( (v == w) && (w == x) && (x == y) && (y == z) ){
+	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(1000000)
+}
+
+
+
+if ((v == 7) && (w == 7) && (x == 7) && (y == 7) && (z == 7)){
+	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(5000000000000)
+}
+
+if ( (v == 7) && (w == 7) ){
+	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) * parseInt(2)
+}
+
+
+
+if ((v == 7) && (w == 7) && (x == 7)){
+	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) * parseInt(3)
+}
+
+if ((v == 7) && (w == 7) && (x == 7) && (y == 7)){
+	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) * parseInt(4)
+}
+  
+    if(document.getElementById('myText06').value <= 0){
+window.location = 'Final-BankruptScene.html';
+}
+
+myShow()
+
+}">
+
+
+<script>
+
+let v = document.getElementById('myText01').value
+let w = document.getElementById('myText02').value
+let x = document.getElementById('myText03').value
+let y = document.getElementById('myText04').value
+let z = document.getElementById('myText05').value
+
+function myShowClear() {
+
+	let a = document.getElementById('myImage01');
+	if ((v == 1)&&(a.style.display === "none")) {
+	a.style.display = "block";
+	}else{
+	a.style.display = "none";
+}
+	let b = document.getElementById('myImage02');
+	if ((v == 2)&&(b.style.display === "none")) {
+	b.style.display = "block";
+	}else{
+	b.style.display = "none";
+}
+	let c = document.getElementById('myImage03');
+	if ((v == 3)&&(c.style.display === "none")) {
+	c.style.display = "block";
+	}else{
+	c.style.display = "none";
+}
+	let d = document.getElementById('myImage04');
+	if ((v == 4)&&(d.style.display === "none")) {
+	d.style.display = "block";
+	}else{
+	d.style.display = "none";
+}
+	let e = document.getElementById('myImage05');
+	if ((v == 5)&&(e.style.display === "none")) {
+	e.style.display = "block";
+	}else{
+	e.style.display = "none";
+}
+	let f = document.getElementById('myImage06');
+	if ((v == 6)&&(f.style.display === "none")) {
+	f.style.display = "block";
+	}else{
+	f.style.display = "none";
+}
+	let g = document.getElementById('myImage07');
+	if ((v == 7)&&(g.style.display === "none")) {
+	g.style.display = "block";
+	}else{
+	g.style.display = "none";
+}
+	let h = document.getElementById('myImage08');
+	if ((v == 8)&&(h.style.display === "none")) {
+	h.style.display = "block";
+	}else{
+	h.style.display = "none";
+}
+	let i = document.getElementById('myImage09');
+	if ((v == 9)&&(i.style.display === "none")) {
+	i.style.display = "block";
+	}else{
+	i.style.display = "none";
+}
+	let j = document.getElementById('myImage10');
+	if ((v == 10)&&(j.style.display === "none")) {
+	j.style.display = "block";
+	}else{
+	j.style.display = "none";
+}
+	let aa = document.getElementById('myImage11');
+	if ((w == 1)&&(aa.style.display === "none")) {
+	aa.style.display = "block";
+	}else{
+	aa.style.display = "none";
+}
+	let ab = document.getElementById('myImage12');
+	if ((w == 2)&&(ab.style.display === "none")) {
+	ab.style.display = "block";
+	}else{
+	ab.style.display = "none";
+}
+	let ac = document.getElementById('myImage13');
+	if ((w == 3)&&(ac.style.display === "none")) {
+	ac.style.display = "block";
+	}else{
+	ac.style.display = "none";
+}
+	let ad = document.getElementById('myImage14');
+	if ((w == 4)&&(ad.style.display === "none")) {
+	ad.style.display = "block";
+	}else{
+	ad.style.display = "none";
+}
+	let ae = document.getElementById('myImage15');
+	if ((w == 5)&&(ae.style.display === "none")) {
+	ae.style.display = "block";
+	}else{
+	ae.style.display = "none";
+}
+	let af = document.getElementById('myImage16');
+	if ((w == 6)&&(af.style.display === "none")) {
+	af.style.display = "block";
+	}else{
+	af.style.display = "none";
+}
+	let ag = document.getElementById('myImage17');
+	if ((w == 7)&&(ag.style.display === "none")) {
+	ag.style.display = "block";
+	}else{
+	ag.style.display = "none";
+}
+	let ah = document.getElementById('myImage18');
+	if ((w == 8)&&(ah.style.display === "none")) {
+	ah.style.display = "block";
+	}else{
+	ah.style.display = "none";
+}
+	let ai = document.getElementById('myImage19');
+	if ((w == 9)&&(ai.style.display === "none")) {
+	ai.style.display = "block";
+	}else{
+	ai.style.display = "none";
+}
+	let aj = document.getElementById('myImage20');
+	if ((w == 10)&&(aj.style.display === "none")) {
+	aj.style.display = "block";
+	}else{
+	aj.style.display = "none";
+}
+	let aaa = document.getElementById('myImage21');
+	if ((x == 1)&&(aaa.style.display === "none")) {
+	aaa.style.display = "block";
+	}else{
+	aaa.style.display = "none";
+}
+	let aba = document.getElementById('myImage22');
+	if ((x == 2)&&(aba.style.display === "none")) {
+	aba.style.display = "block";
+	}else{
+	aba.style.display = "none";
+}
+	let aca = document.getElementById('myImage23');
+	if ((x == 3)&&(aca.style.display === "none")) {
+	aca.style.display = "block";
+	}else{
+	aca.style.display = "none";
+}
+	let ada = document.getElementById('myImage24');
+	if ((x == 4)&&(ada.style.display === "none")) {
+	ada.style.display = "block";
+	}else{
+	ada.style.display = "none";
+}
+	let aea = document.getElementById('myImage25');
+	if ((x == 5)&&(aea.style.display === "none")) {
+	aea.style.display = "block";
+	}else{
+	aea.style.display = "none";
+}
+	let afa = document.getElementById('myImage26');
+	if ((x == 6)&&(afa.style.display === "none")) {
+	afa.style.display = "block";
+	}else{
+	afa.style.display = "none";
+}
+	let aga = document.getElementById('myImage27');
+	if ((x == 7)&&(aga.style.display === "none")) {
+	aga.style.display = "block";
+	}else{
+	aga.style.display = "none";
+}
+	let aha = document.getElementById('myImage28');
+	if ((x == 8)&&(aha.style.display === "none")) {
+	aha.style.display = "block";
+	}else{
+	aha.style.display = "none";
+}
+	let aia = document.getElementById('myImage29');
+	if ((x == 9)&&(aia.style.display === "none")) {
+	aia.style.display = "block";
+	}else{
+	aia.style.display = "none";
+}
+	let aja = document.getElementById('myImage30');
+	if ((x == 10)&&(aja.style.display === "none")) {
+	aja.style.display = "block";
+	}else{
+	aja.style.display = "none";
+}
+	let aaaq = document.getElementById('myImage31');
+	if ((y == 1)&&(aaaq.style.display === "none")) {
+	aaaq.style.display = "block";
+	}else{
+	aaaq.style.display = "none";
+}
+	let abaq = document.getElementById('myImage32');
+	if ((y == 2)&&(abaq.style.display === "none")) {
+	abaq.style.display = "block";
+	}else{
+	abaq.style.display = "none";
+}
+	let acaq = document.getElementById('myImage33');
+	if ((y == 3)&&(acaq.style.display === "none")) {
+	acaq.style.display = "block";
+	}else{
+	acaq.style.display = "none";
+}
+	let adaq = document.getElementById('myImage34');
+	if ((y == 4)&&(adaq.style.display === "none")) {
+	adaq.style.display = "block";
+	}else{
+	adaq.style.display = "none";
+}
+	let aeaq = document.getElementById('myImage35');
+	if ((y == 5)&&(aeaq.style.display === "none")) {
+	aeaq.style.display = "block";
+	}else{
+	aeaq.style.display = "none";
+}
+	let afaq = document.getElementById('myImage36');
+	if ((y == 6)&&(afaq.style.display === "none")) {
+	afaq.style.display = "block";
+	}else{
+	afaq.style.display = "none";
+}
+	let agaq = document.getElementById('myImage37');
+	if ((y == 7)&&(agaq.style.display === "none")) {
+	agaq.style.display = "block";
+	}else{
+	agaq.style.display = "none";
+}
+	let ahaq = document.getElementById('myImage38');
+	if ((y == 8)&&(ahaq.style.display === "none")) {
+	ahaq.style.display = "block";
+	}else{
+	ahaq.style.display = "none";
+}
+	let aiaq = document.getElementById('myImage39');
+	if ((y == 9)&&(aiaq.style.display === "none")) {
+	aiaq.style.display = "block";
+	}else{
+	aiaq.style.display = "none";
+}
+	let ajaq = document.getElementById('myImage40');
+	if ((y == 10)&&(ajaq.style.display === "none")) {
+	ajaq.style.display = "block";
+	}else{
+	ajaq.style.display = "none";
+}
+	let aaaqw = document.getElementById('myImage41');
+	if ((z == 1)&&(aaaqw.style.display === "none")) {
+	aaaqw.style.display = "block";
+	}else{
+	aaaqw.style.display = "none";
+}
+	let abaqw = document.getElementById('myImage42');
+	if ((z == 2)&&(abaqw.style.display === "none")) {
+	abaqw.style.display = "block";
+	}else{
+	abaqw.style.display = "none";
+}
+	let acaqw = document.getElementById('myImage43');
+	if ((z == 3)&&(acaqw.style.display === "none")) {
+	acaqw.style.display = "block";
+	}else{
+	acaqw.style.display = "none";
+}
+	let adaqw = document.getElementById('myImage44');
+	if ((z == 4)&&(adaqw.style.display === "none")) {
+	adaqw.style.display = "block";
+	}else{
+	adaqw.style.display = "none";
+}
+	let aeaqw = document.getElementById('myImage45');
+	if ((z == 5)&&(aeaqw.style.display === "none")) {
+	aeaqw.style.display = "block";
+	}else{
+	aeaqw.style.display = "none";
+}
+	let afaqw = document.getElementById('myImage46');
+	if ((z == 6)&&(afaqw.style.display === "none")) {
+	afaqw.style.display = "block";
+	}else{
+	afaqw.style.display = "none";
+}
+	let agaqw = document.getElementById('myImage47');
+	if ((z == 7)&&(agaqw.style.display === "none")) {
+	agaqw.style.display = "block";
+	}else{
+	agaqw.style.display = "none";
+}
+	let ahaqw = document.getElementById('myImage48');
+	if ((z == 8)&&(ahaqw.style.display === "none")) {
+	ahaqw.style.display = "block";
+	}else{
+	ahaqw.style.display = "none";
+}
+	let aiaqw = document.getElementById('myImage49');
+	if ((z == 9)&&(aiaqw.style.display === "none")) {
+	aiaqw.style.display = "block";
+	}else{
+	aiaqw.style.display = "none";
+}
+	let ajaqw = document.getElementById('myImage50');
+	if ((z == 10)&&(ajaqw.style.display === "none")) {
+	ajaqw.style.display = "block";
+	}else{
+	ajaqw.style.display = "none";
+}
+}
+
+
+
+function myShow(){
+
+	let a = document.getElementById('myImage01');
+	if ((v == 1)&&(a.style.display === "none")) {
+	a.style.display = "block";
+	}else{
+	a.style.display = "none";
+}
+	let b = document.getElementById('myImage02');
+	if ((v == 2)&&(b.style.display === "none")) {
+	b.style.display = "block";
+	}else{
+	b.style.display = "none";
+}
+	let c = document.getElementById('myImage03');
+	if ((v == 3)&&(c.style.display === "none")) {
+	c.style.display = "block";
+	}else{
+	c.style.display = "none";
+}
+	let d = document.getElementById('myImage04');
+	if ((v == 4)&&(d.style.display === "none")) {
+	d.style.display = "block";
+	}else{
+	d.style.display = "none";
+}
+	let e = document.getElementById('myImage05');
+	if ((v == 5)&&(e.style.display === "none")) {
+	e.style.display = "block";
+	}else{
+	e.style.display = "none";
+}
+	let f = document.getElementById('myImage06');
+	if ((v == 6)&&(f.style.display === "none")) {
+	f.style.display = "block";
+	}else{
+	f.style.display = "none";
+}
+	let g = document.getElementById('myImage07');
+	if ((v == 7)&&(g.style.display === "none")) {
+	g.style.display = "block";
+	}else{
+	g.style.display = "none";
+}
+	let h = document.getElementById('myImage08');
+	if ((v == 8)&&(h.style.display === "none")) {
+	h.style.display = "block";
+	}else{
+	h.style.display = "none";
+}
+	let i = document.getElementById('myImage09');
+	if ((v == 9)&&(i.style.display === "none")) {
+	i.style.display = "block";
+	}else{
+	i.style.display = "none";
+}
+	let j = document.getElementById('myImage10');
+	if ((v == 10)&&(j.style.display === "none")) {
+	j.style.display = "block";
+	}else{
+	j.style.display = "none";
+}
+	let aa = document.getElementById('myImage11');
+	if ((w == 1)&&(aa.style.display === "none")) {
+	aa.style.display = "block";
+	}else{
+	aa.style.display = "none";
+}
+	let ab = document.getElementById('myImage12');
+	if ((w == 2)&&(ab.style.display === "none")) {
+	ab.style.display = "block";
+	}else{
+	ab.style.display = "none";
+}
+	let ac = document.getElementById('myImage13');
+	if ((w == 3)&&(ac.style.display === "none")) {
+	ac.style.display = "block";
+	}else{
+	ac.style.display = "none";
+}
+	let ad = document.getElementById('myImage14');
+	if ((w == 4)&&(ad.style.display === "none")) {
+	ad.style.display = "block";
+	}else{
+	ad.style.display = "none";
+}
+	let ae = document.getElementById('myImage15');
+	if ((w == 5)&&(ae.style.display === "none")) {
+	ae.style.display = "block";
+	}else{
+	ae.style.display = "none";
+}
+	let af = document.getElementById('myImage16');
+	if ((w == 6)&&(af.style.display === "none")) {
+	af.style.display = "block";
+	}else{
+	af.style.display = "none";
+}
+	let ag = document.getElementById('myImage17');
+	if ((w == 7)&&(ag.style.display === "none")) {
+	ag.style.display = "block";
+	}else{
+	ag.style.display = "none";
+}
+	let ah = document.getElementById('myImage18');
+	if ((w == 8)&&(ah.style.display === "none")) {
+	ah.style.display = "block";
+	}else{
+	ah.style.display = "none";
+}
+	let ai = document.getElementById('myImage19');
+	if ((w == 9)&&(ai.style.display === "none")) {
+	ai.style.display = "block";
+	}else{
+	ai.style.display = "none";
+}
+	let aj = document.getElementById('myImage20');
+	if ((w == 10)&&(aj.style.display === "none")) {
+	aj.style.display = "block";
+	}else{
+	aj.style.display = "none";
+}
+	let aaa = document.getElementById('myImage21');
+	if ((x == 1)&&(aaa.style.display === "none")) {
+	aaa.style.display = "block";
+	}else{
+	aaa.style.display = "none";
+}
+	let aba = document.getElementById('myImage22');
+	if ((x == 2)&&(aba.style.display === "none")) {
+	aba.style.display = "block";
+	}else{
+	aba.style.display = "none";
+}
+	let aca = document.getElementById('myImage23');
+	if ((x == 3)&&(aca.style.display === "none")) {
+	aca.style.display = "block";
+	}else{
+	aca.style.display = "none";
+}
+	let ada = document.getElementById('myImage24');
+	if ((x == 4)&&(ada.style.display === "none")) {
+	ada.style.display = "block";
+	}else{
+	ada.style.display = "none";
+}
+	let aea = document.getElementById('myImage25');
+	if ((x == 5)&&(aea.style.display === "none")) {
+	aea.style.display = "block";
+	}else{
+	aea.style.display = "none";
+}
+	let afa = document.getElementById('myImage26');
+	if ((x == 6)&&(afa.style.display === "none")) {
+	afa.style.display = "block";
+	}else{
+	afa.style.display = "none";
+}
+	let aga = document.getElementById('myImage27');
+	if ((x == 7)&&(aga.style.display === "none")) {
+	aga.style.display = "block";
+	}else{
+	aga.style.display = "none";
+}
+	let aha = document.getElementById('myImage28');
+	if ((x == 8)&&(aha.style.display === "none")) {
+	aha.style.display = "block";
+	}else{
+	aha.style.display = "none";
+}
+	let aia = document.getElementById('myImage29');
+	if ((x == 9)&&(aia.style.display === "none")) {
+	aia.style.display = "block";
+	}else{
+	aia.style.display = "none";
+}
+	let aja = document.getElementById('myImage30');
+	if ((x == 10)&&(aja.style.display === "none")) {
+	aja.style.display = "block";
+	}else{
+	aja.style.display = "none";
+}
+	let aaaq = document.getElementById('myImage31');
+	if ((y == 1)&&(aaaq.style.display === "none")) {
+	aaaq.style.display = "block";
+	}else{
+	aaaq.style.display = "none";
+}
+	let abaq = document.getElementById('myImage32');
+	if ((y == 2)&&(abaq.style.display === "none")) {
+	abaq.style.display = "block";
+	}else{
+	abaq.style.display = "none";
+}
+	let acaq = document.getElementById('myImage33');
+	if ((y == 3)&&(acaq.style.display === "none")) {
+	acaq.style.display = "block";
+	}else{
+	acaq.style.display = "none";
+}
+	let adaq = document.getElementById('myImage34');
+	if ((y == 4)&&(adaq.style.display === "none")) {
+	adaq.style.display = "block";
+	}else{
+	adaq.style.display = "none";
+}
+	let aeaq = document.getElementById('myImage35');
+	if ((y == 5)&&(aeaq.style.display === "none")) {
+	aeaq.style.display = "block";
+	}else{
+	aeaq.style.display = "none";
+}
+	let afaq = document.getElementById('myImage36');
+	if ((y == 6)&&(afaq.style.display === "none")) {
+	afaq.style.display = "block";
+	}else{
+	afaq.style.display = "none";
+}
+	let agaq = document.getElementById('myImage37');
+	if ((y == 7)&&(agaq.style.display === "none")) {
+	agaq.style.display = "block";
+	}else{
+	agaq.style.display = "none";
+}
+	let ahaq = document.getElementById('myImage38');
+	if ((y == 8)&&(ahaq.style.display === "none")) {
+	ahaq.style.display = "block";
+	}else{
+	ahaq.style.display = "none";
+}
+	let aiaq = document.getElementById('myImage39');
+	if ((y == 9)&&(aiaq.style.display === "none")) {
+	aiaq.style.display = "block";
+	}else{
+	aiaq.style.display = "none";
+}
+	let ajaq = document.getElementById('myImage40');
+	if ((y == 10)&&(ajaq.style.display === "none")) {
+	ajaq.style.display = "block";
+	}else{
+	ajaq.style.display = "none";
+}
+	let aaaqw = document.getElementById('myImage41');
+	if ((z == 1)&&(aaaqw.style.display === "none")) {
+	aaaqw.style.display = "block";
+	}else{
+	aaaqw.style.display = "none";
+}
+	let abaqw = document.getElementById('myImage42');
+	if ((z == 2)&&(abaqw.style.display === "none")) {
+	abaqw.style.display = "block";
+	}else{
+	abaqw.style.display = "none";
+}
+	let acaqw = document.getElementById('myImage43');
+	if ((z == 3)&&(acaqw.style.display === "none")) {
+	acaqw.style.display = "block";
+	}else{
+	acaqw.style.display = "none";
+}
+	let adaqw = document.getElementById('myImage44');
+	if ((z == 4)&&(adaqw.style.display === "none")) {
+	adaqw.style.display = "block";
+	}else{
+	adaqw.style.display = "none";
+}
+	let aeaqw = document.getElementById('myImage45');
+	if ((z == 5)&&(aeaqw.style.display === "none")) {
+	aeaqw.style.display = "block";
+	}else{
+	aeaqw.style.display = "none";
+}
+	let afaqw = document.getElementById('myImage46');
+	if ((z == 6)&&(afaqw.style.display === "none")) {
+	afaqw.style.display = "block";
+	}else{
+	afaqw.style.display = "none";
+}
+	let agaqw = document.getElementById('myImage47');
+	if ((z == 7)&&(agaqw.style.display === "none")) {
+	agaqw.style.display = "block";
+	}else{
+	agaqw.style.display = "none";
+}
+	let ahaqw = document.getElementById('myImage48');
+	if ((z == 8)&&(ahaqw.style.display === "none")) {
+	ahaqw.style.display = "block";
+	}else{
+	ahaqw.style.display = "none";
+}
+	let aiaqw = document.getElementById('myImage49');
+	if ((z == 9)&&(aiaqw.style.display === "none")) {
+	aiaqw.style.display = "block";
+	}else{
+	aiaqw.style.display = "none";
+}
+	let ajaqw = document.getElementById('myImage50');
+	if ((z == 10)&&(ajaqw.style.display === "none")) {
+	ajaqw.style.display = "block";
+	}else{
+	ajaqw.style.display = "none";
+}
+}
+
+</script>
+
+<img id="myImage01" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+<img id="myImage02" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+<img id="myImage03" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+<img id="myImage04" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+<img id="myImage05" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+<img id="myImage06" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+<img id="myImage07" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+<img id="myImage08" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+<img id="myImage09" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+<img id="myImage10" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+<img id="myImage11" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+<img id="myImage12" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+<img id="myImage13" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+<img id="myImage14" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+<img id="myImage15" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+<img id="myImage16" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+<img id="myImage17" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+<img id="myImage18" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+<img id="myImage19" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+<img id="myImage20" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+<img id="myImage21" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+<img id="myImage22" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+<img id="myImage23" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+<img id="myImage24" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+<img id="myImage25" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+<img id="myImage26" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+<img id="myImage27" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+<img id="myImage28" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+<img id="myImage29" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+<img id="myImage30" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+<img id="myImage31" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+<img id="myImage32" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+<img id="myImage33" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+<img id="myImage34" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+<img id="myImage35" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+<img id="myImage36" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+<img id="myImage37" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+<img id="myImage38" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+<img id="myImage39" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+<img id="myImage40" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+<img id="myImage41" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+<img id="myImage42" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+<img id="myImage43" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+<img id="myImage44" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+<img id="myImage45" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+<img id="myImage46" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+<img id="myImage47" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+<img id="myImage48" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+<img id="myImage49" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+<img id="myImage50" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png" 
+	style="position:absolute; display:none; width:128px; height:128px; left:900;">
