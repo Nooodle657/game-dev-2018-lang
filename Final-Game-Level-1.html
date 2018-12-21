@@ -1,12 +1,14 @@
-<h1 align=center> Slots </h1><br>
-Money: <input type=text id="myText06" value=2000><br>
+<body id="myBody" style="background-repeat:repeat;
+background-size: 100%" background=
+"0001.png">
+<h1 align=center> Slots </h1>
+
+Money:<br><input type=text id="myText06" value=2000><br>
 <input type=text id="myText01" value=""><br>
 <input type=text id="myText02" value=""><br>
 <input type=text id="myText03" value=""><br>
 <input type=text id="myText04" value=""><br>
 <input type=text id="myText05" value=""><br>
-
-
 
 <input type=button align=center value="PLAY" onclick="{
 
@@ -26,15 +28,15 @@ y = document.getElementById('myText04').value
 z = document.getElementById('myText05').value
 
 if (v == w){
-	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(75)
-}
-
-if ((v == w) && (w == x)){
 	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(100)
 }
 
+if ((v == w) && (w == x)){
+	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(1000)
+}
+
 if ((v == w) && (w == x) && (x == y)){
-	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(250)
+	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(10000)
 }
 
 
@@ -45,21 +47,21 @@ if ( (v == w) && (w == x) && (x == y) && (y == z) ){
 
 
 
-if ((v == 7) && (w == 7) && (x == 7) && (y == 7) && (z == 7)){
-	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(5000000000000)
+if ((v == 10) && (w == 10) && (x == 10) && (y == 10) && (z == 10)){
+	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) * parseInt(5)
 }
 
-if ( (v == 7) && (w == 7) ){
+if ( (v == 10) && (w == 10) ){
 	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) * parseInt(2)
 }
 
 
 
-if ((v == 7) && (w == 7) && (x == 7)){
+if ((v == 10) && (w == 10) && (x == 10)){
 	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) * parseInt(3)
 }
 
-if ((v == 7) && (w == 7) && (x == 7) && (y == 7)){
+if ((v == 10) && (w == 10) && (x == 10) && (y == 10)){
 	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) * parseInt(4)
 }
   
@@ -125,6 +127,16 @@ window.location = 'Final-BankruptScene.html';
 myShow()
 
 }">
+
+<h3 align=right> Point System </h3>
+<h3 align=right> Pair = 100 </h3>
+<h3 align=right> Three of a Kind = 1000 </h3>
+<h3 align=right> 4 of a Kind = 10000 </h3>
+<h3 align=right> All 5 = 100000 </h3>
+<h3 align=right> Lucky 10 Pair = Times 2 </h3>
+<h3 align=right> Lucky 10 Triplet = Times 3 </h3>
+<h3 align=right> Lucky 10 Quadruplet = Times 4 </h3>
+<h3 align=right> Lucky 10 Yahtzee = Times 5 </h3>
 
 
 <script>
@@ -748,102 +760,102 @@ function myShow(){
 </script>
 
 <img id="myImage01" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+	style="position:absolute; display:none; width:128px; height:128px; left:350;">
 <img id="myImage02" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+	style="position:absolute; display:none; width:128px; height:128px; left:350;">
 <img id="myImage03" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+	style="position:absolute; display:none; width:128px; height:128px; left:350;">
 <img id="myImage04" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+	style="position:absolute; display:none; width:128px; height:128px; left:350;">
 <img id="myImage05" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+	style="position:absolute; display:none; width:128px; height:128px; left:350;">
 <img id="myImage06" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+	style="position:absolute; display:none; width:128px; height:128px; left:350;">
 <img id="myImage07" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+	style="position:absolute; display:none; width:128px; height:128px; left:350;">
 <img id="myImage08" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+	style="position:absolute; display:none; width:128px; height:128px; left:350;">
 <img id="myImage09" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+	style="position:absolute; display:none; width:128px; height:128px; left:350;">
 <img id="myImage10" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:100;">
+	style="position:absolute; display:none; width:128px; height:128px; left:350;">
 <img id="myImage11" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+	style="position:absolute; display:none; width:128px; height:128px; left:550;">
 <img id="myImage12" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+	style="position:absolute; display:none; width:128px; height:128px; left:550;">
 <img id="myImage13" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+	style="position:absolute; display:none; width:128px; height:128px; left:550;">
 <img id="myImage14" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+	style="position:absolute; display:none; width:128px; height:128px; left:550;">
 <img id="myImage15" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+	style="position:absolute; display:none; width:128px; height:128px; left:550;">
 <img id="myImage16" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+	style="position:absolute; display:none; width:128px; height:128px; left:550;">
 <img id="myImage17" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+	style="position:absolute; display:none; width:128px; height:128px; left:550;">
 <img id="myImage18" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+	style="position:absolute; display:none; width:128px; height:128px; left:550;">
 <img id="myImage19" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+	style="position:absolute; display:none; width:128px; height:128px; left:550;">
 <img id="myImage20" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:300;">
+	style="position:absolute; display:none; width:128px; height:128px; left:550;">
 <img id="myImage21" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+	style="position:absolute; display:none; width:128px; height:128px; left:750;">
 <img id="myImage22" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+	style="position:absolute; display:none; width:128px; height:128px; left:750;">
 <img id="myImage23" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+	style="position:absolute; display:none; width:128px; height:128px; left:750;">
 <img id="myImage24" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+	style="position:absolute; display:none; width:128px; height:128px; left:750;">
 <img id="myImage25" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+	style="position:absolute; display:none; width:128px; height:128px; left:750;">
 <img id="myImage26" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+	style="position:absolute; display:none; width:128px; height:128px; left:750;">
 <img id="myImage27" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+	style="position:absolute; display:none; width:128px; height:128px; left:750;">
 <img id="myImage28" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+	style="position:absolute; display:none; width:128px; height:128px; left:750;">
 <img id="myImage29" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+	style="position:absolute; display:none; width:128px; height:128px; left:750;">
 <img id="myImage30" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:500;">
+	style="position:absolute; display:none; width:128px; height:128px; left:750;">
 <img id="myImage31" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+	style="position:absolute; display:none; width:128px; height:128px; left:950;">
 <img id="myImage32" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+	style="position:absolute; display:none; width:128px; height:128px; left:950;">
 <img id="myImage33" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+	style="position:absolute; display:none; width:128px; height:128px; left:950;">
 <img id="myImage34" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+	style="position:absolute; display:none; width:128px; height:128px; left:950;">
 <img id="myImage35" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+	style="position:absolute; display:none; width:128px; height:128px; left:950;">
 <img id="myImage36" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+	style="position:absolute; display:none; width:128px; height:128px; left:950;">
 <img id="myImage37" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+	style="position:absolute; display:none; width:128px; height:128px; left:950;">
 <img id="myImage38" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+	style="position:absolute; display:none; width:128px; height:128px; left:950;">
 <img id="myImage39" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+	style="position:absolute; display:none; width:128px; height:128px; left:950;">
 <img id="myImage40" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:700;">
+	style="position:absolute; display:none; width:128px; height:128px; left:950;">
 <img id="myImage41" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/1-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+	style="position:absolute; display:none; width:128px; height:128px; left:1150;">
 <img id="myImage42" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/2-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+	style="position:absolute; display:none; width:128px; height:128px; left:1150;">
 <img id="myImage43" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/3-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+	style="position:absolute; display:none; width:128px; height:128px; left:1150;">
 <img id="myImage44" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/4-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+	style="position:absolute; display:none; width:128px; height:128px; left:1150;">
 <img id="myImage45" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/5-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+	style="position:absolute; display:none; width:128px; height:128px; left:1150;">
 <img id="myImage46" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/6-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+	style="position:absolute; display:none; width:128px; height:128px; left:1150;">
 <img id="myImage47" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/7-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+	style="position:absolute; display:none; width:128px; height:128px; left:1150;">
 <img id="myImage48" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/8-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+	style="position:absolute; display:none; width:128px; height:128px; left:1150;">
 <img id="myImage49" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/9-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+	style="position:absolute; display:none; width:128px; height:128px; left:1150;">
 <img id="myImage50" width=128 src="http://www.pngall.com/wp-content/uploads/2016/04/10-Number-PNG.png" 
-	style="position:absolute; display:none; width:128px; height:128px; left:900;">
+	style="position:absolute; display:none; width:128px; height:128px; left:1150;">
