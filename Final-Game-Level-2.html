@@ -15,10 +15,10 @@ Money:<br><input type=text id="myText06" value=2000><br>
 myShowClear()
 
 	document.getElementById('myText01').value = Math.floor((Math.random() * 10) + 1)
-	document.getElementById('myText02').value = Math.floor((Math.random() * 10) + 1)
-	document.getElementById('myText03').value = Math.floor((Math.random() * 10) + 1)
-	document.getElementById('myText04').value = Math.floor((Math.random() * 10) + 1)
-	document.getElementById('myText05').value = Math.floor((Math.random() * 10) + 1)
+	document.getElementById('myText02').value = parseInt(document.getElementById('myText01').value) - parseInt(1)
+	document.getElementById('myText03').value = parseInt(document.getElementById('myText02').value) - parseInt(2)
+	document.getElementById('myText04').value = parseInt(document.getElementById('myText03').value) + parseInt(3)
+	document.getElementById('myText05').value = parseInt(document.getElementById('myText04').value) + parseInt(4)
 	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) - parseInt(50)
 
 v = document.getElementById('myText01').value
@@ -26,6 +26,38 @@ w = document.getElementById('myText02').value
 x = document.getElementById('myText03').value
 y = document.getElementById('myText04').value
 z = document.getElementById('myText05').value
+
+if (w > 10){
+	(w = 10)
+}
+
+if (w < 1){
+	(w = 1)
+}
+
+if (x > 10){
+	(x = 10)
+}
+
+if (x < 1){
+	(x = 1)
+}
+
+if (y > 10){
+	(y = 10)
+}
+
+if (y < 1){
+	(y = 1)
+}
+
+if (z > 10){
+	(z = 10)
+}
+
+if (z < 1){
+	(z = 1)
+}
 
 if (v == w){
 	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(100)
@@ -49,61 +81,6 @@ if ( (v == w) && (w == x) && (x == y) && (y == z) ){
 
 if ((v == 10) && (w == 10) && (x == 10) && (y == 10) && (z == 10)){
 	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) * parseInt(5)
-}
-
-if ( (v == 10) && (w == 10) ){
-	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) * parseInt(2)
-}
-
-
-
-if ((v == 10) && (w == 10) && (x == 10)){
-	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) * parseInt(3)
-}
-
-if ((v == 10) && (w == 10) && (x == 10) && (y == 10)){
-	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) * parseInt(4)
-}
-  
-    if(document.getElementById('myText06').value <= 0){
-window.location = 'Final-BankruptScene.html';
-}
-
-myShow()
-
-}">
-
-<input type=button align=center value="TEST" onclick="{
-
-myShowClear()
-v = document.getElementById('myText01').value
-w = document.getElementById('myText02').value
-x = document.getElementById('myText03').value
-y = document.getElementById('myText04').value
-z = document.getElementById('myText05').value
-
-if (v == w){
-	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(75)
-}
-
-if ((v == w) && (w == x)){
-	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(100)
-}
-
-if ((v == w) && (w == x) && (x == y)){
-	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(250)
-}
-
-
-
-if ( (v == w) && (w == x) && (x == y) && (y == z) ){
-	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(1000000)
-}
-
-
-
-if ((v == 10) && (w == 10) && (x == 10) && (y == 10) && (z == 10)){
-	document.getElementById('myText06').value = parseInt(document.getElementById('myText06').value) + parseInt(5000000000000)
 }
 
 if ( (v == 10) && (w == 10) ){
