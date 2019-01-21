@@ -1,17 +1,22 @@
 <h2 align=center> 1D Arrays by Nathan</h2>
 
-<input type=text value=3 id="myText01" >
-
 <input type=button value="1D Array" onclick="{
+   myProgramTerms = []  // creates an array
 
-	myProgramTerms = []  // creates an array
-
-	myProgramTerms[0] = `variables`
-	myProgramTerms[1] = `decisions`
-	myProgramTerms[2] = `for loops`
-
-
-	for (let myLoop=0;  myLoop
+   myProgramTerms[0] = `Bubbles`
+   myProgramTerms[1] = `Dynamite`
+   myProgramTerms[2] = `NPC's`
+   myProgramTerms[3] = `Tye`
+   myProgramTerms[4] = `PEOPLE`
+   myProgramTerms[5] = `Volume`
+   myProgramTerms[6] = `Dogs`
+   myProgramTerms[7] = `Knives`
+   myProgramTerms[8] = `BLOOOOOOOOD and kittens`
+   myProgramTerms[9] = `The wheel on the bus go round and round...`
+   document.getElementById('myDiv01').innerHTML =``
+   for (let myLoop=0;  myLoop < Math.floor((Math.random() * 10) + 1);  myLoop++ ){
+    document.getElementById('myDiv01').innerHTML += myLoop + `:`+ myProgramTerms[myLoop]+`<br>`
+   }
 
 }">
 
